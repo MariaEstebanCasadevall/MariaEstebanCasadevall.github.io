@@ -38,6 +38,12 @@ body.sticky-bottom-footer {
   }
 }
 
+.post {
+  max-width: 700px;      // or 65ch for character-based width
+  margin: 0 auto;        // centers it on the page
+  padding: 0 1rem;       // adds spacing on small screens
+  text-align: justify;   // aligns both left and right edges
+}
 // TODO: redefine content layout.
 
 /******************************************************************************
