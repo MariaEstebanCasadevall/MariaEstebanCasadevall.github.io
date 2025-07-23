@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://mariaaestt.github.io/MariaEsteban/sitemap.xml
+Sitemap: https://mariaaestt.github.io/sitemap.xml
