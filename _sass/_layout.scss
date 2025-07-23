@@ -23,14 +23,22 @@ body {
 }
 
 // Profile
+// Profile
 .profile {
   img {
     width: 100%;
   }
+
+  &.float-left {
+    margin-right: 2rem;  /* Increase this value to add more space */
+  }
+
+  &.float-right {
+    margin-left: 2rem;   /* Increase this value to add more space */
+  }
 }
 
-
-
+// Post
 .post {       // centers it on the page
   #padding: 0 1rem;       // adds spacing on small screens
   text-align: justify;   // aligns both left and right edges
