@@ -56,3 +56,10 @@ body {
 *****************************************************************************/
 
 // TODO: redefine projects layout.
+
+.square-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 0; /* ensures it's square */
+}
