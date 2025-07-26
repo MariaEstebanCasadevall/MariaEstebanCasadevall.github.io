@@ -2,6 +2,10 @@
 layout: default
 ---
 
+---
+layout: default
+---
+
 {% if page.cv_pdf %}
   <a
     {% if page.cv_pdf contains '://' %}
@@ -11,7 +15,9 @@ layout: default
     {% endif %}
     target="_blank"
     rel="noopener noreferrer"
+    class="float-right"
   >
-    <i class="fa-solid fa-file-pdf"></i> View PDF
+    <i class="fa-solid fa-file-pdf"></i>
   </a>
 {% endif %}
+
