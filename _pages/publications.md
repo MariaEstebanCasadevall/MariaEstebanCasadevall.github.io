@@ -13,8 +13,7 @@ nav_order: 2
 
 {% include bib_search.liquid %}
 
-<div class="publications">
 
-{% bibliography %}
-
-</div>
+<ul class="list-group list-group-flush">
+  {% bibliography %}
+</ul>
