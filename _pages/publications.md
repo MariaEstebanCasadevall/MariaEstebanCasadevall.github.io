@@ -15,12 +15,15 @@ nav_order: 2
   {% assign preprints = site.data.publications | where: "type", "preprint" %}
   {% for content in preprints %}
     <li class="list-group-item">
-      <span style="font-size: 0.95rem">
-        {{ content.authors }}. 
-        <a href="{{ content.url }}" target="_blank"><strong>{{ content.name }}</strong></a>. 
-        {{ content.publisher }}. 
-        <em>{{ content.summary }}</em>.
-      </span>
+      • {{ content.authors }}. ({{ content.releaseDate | date: "%Y" }}) 
+      <a href="{{ content.url }}" target="_blank"><strong>{{ content.name }}</strong></a>. 
+      {{ content.publisher }}. 
+      {{ content.volume }}{% if content.number %} No {{ content.number }}{% endif %}{% if content.pages %}, pp {{ content.pages }}{% endif %}.
+      {% if content.arxiv %}
+        <a href="{{ content.arxiv }}" target="_blank" class="btn btn-sm btn-outline-primary ms-2">
+          View on arXiv
+        </a>
+      {% endif %}
     </li>
   {% endfor %}
 </ul>
@@ -31,12 +34,15 @@ nav_order: 2
   {% assign preprints = site.data.publications | where: "type", "preprint" %}
   {% for content in preprints %}
     <li class="list-group-item">
-      <span style="font-size: 0.95rem">
-        {{ content.authors }}. 
-        <a href="{{ content.url }}" target="_blank"><strong>{{ content.name }}</strong></a>. 
-        {{ content.publisher }}. 
-        <em>{{ content.summary }}</em>.
-      </span>
+      • {{ content.authors }}. ({{ content.releaseDate | date: "%Y" }}) 
+      <a href="{{ content.url }}" target="_blank"><strong>{{ content.name }}</strong></a>. 
+      {{ content.publisher }}. 
+      {{ content.volume }}{% if content.number %} No {{ content.number }}{% endif %}{% if content.pages %}, pp {{ content.pages }}{% endif %}.
+      {% if content.arxiv %}
+        <a href="{{ content.arxiv }}" target="_blank" class="btn btn-sm btn-outline-primary ms-2">
+          View on arXiv
+        </a>
+      {% endif %}
     </li>
   {% endfor %}
 </ul>
