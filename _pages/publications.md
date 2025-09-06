@@ -11,8 +11,34 @@ nav_order: 2
 
 <!-- Bibsearch Feature -->
 
+HOLA
 
-
+<h3>Publications</h3>
 <ul class="list-group list-group-flush">
-  {% bibliography %}
+  {% assign publications = site.data.publications | where: "type", "publication" | sort: 'releaseDate' | reverse %}
+  {% for content in publications %}
+    <li class="list-group-item">
+      <a href="{{ content.url }}" target="_blank">{{ content.name }}</a><br>
+      <span style="font-size: 0.95rem">{{ content.publisher }}</span><br>
+      <span style="font-size: 0.95rem; font-style: italic">{{ content.summary }}</span><br>
+      <a href="{{ content.arxiv }}" target="_blank" class="btn btn-sm btn-outline-primary mt-2">
+        View on arXiv
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+<h3>Preprints</h3>
+<ul class="list-group list-group-flush">
+  {% assign preprints = site.data.publications | where: "type", "preprint" | sort: 'releaseDate' | reverse %}
+  {% for content in preprints %}
+    <li class="list-group-item">
+      <a href="{{ content.url }}" target="_blank">{{ content.name }}</a><br>
+      <span style="font-size: 0.95rem">{{ content.publisher }}</span><br>
+      <span style="font-size: 0.95rem; font-style: italic">{{ content.summary }}</span><br>
+      <a href="{{ content.arxiv }}" target="_blank" class="btn btn-sm btn-outline-primary mt-2">
+        View on arXiv
+      </a>
+    </li>
+  {% endfor %}
 </ul>
