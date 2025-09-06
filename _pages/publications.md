@@ -10,7 +10,23 @@ nav_order: 2
 <!-- _pages/publications.md -->
 
 <!-- Bibsearch Feature -->
-<h1>Research</h1>
+<h3>Preprints</h3>
+<ul class="list-group list-group-flush">
+  {% assign preprints = site.data.publications | where: "type", "preprint" %}
+  {% for content in preprints %}
+    <li class="list-group-item">
+      <a href="{{ content.url }}" target="_blank">{{ content.name }}</a><br>
+      <span style="font-size: 0.95rem">{{ content.authors }}</span><br>
+      <span style="font-size: 0.95rem">{{ content.publisher }}</span><br>
+      <span style="font-size: 0.95rem; font-style: italic">{{ content.summary }}</span><br>
+      {% if content.arxiv %}
+        <a href="{{ content.arxiv }}" target="_blank" class="btn btn-sm btn-outline-primary mt-2">
+          View on arXiv
+        </a>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
 
 <h3>Publications</h3>
 <ul class="list-group list-group-flush">
@@ -18,26 +34,15 @@ nav_order: 2
   {% for content in publications %}
     <li class="list-group-item">
       <a href="{{ content.url }}" target="_blank">{{ content.name }}</a><br>
+      <span style="font-size: 0.95rem">{{ content.authors }}</span><br>
       <span style="font-size: 0.95rem">{{ content.publisher }}</span><br>
       <span style="font-size: 0.95rem; font-style: italic">{{ content.summary }}</span><br>
-      <a href="{{ content.arxiv }}" target="_blank" class="btn btn-sm btn-outline-primary mt-2">
-        View on arXiv
-      </a>
+      {% if content.arxiv %}
+        <a href="{{ content.arxiv }}" target="_blank" class="btn btn-sm btn-outline-primary mt-2">
+          View on arXiv
+        </a>
+      {% endif %}
     </li>
   {% endfor %}
 </ul>
 
-<h3>Preprints</h3>
-<ul class="list-group list-group-flush">
-  {% assign preprints = site.data.publications | where: "type", "preprint" %}
-  {% for content in preprints %}
-    <li class="list-group-item">
-      <a href="{{ content.url }}" target="_blank">{{ content.name }}</a><br>
-      <span style="font-size: 0.95rem">{{ content.publisher }}</span><br>
-      <span style="font-size: 0.95rem; font-style: italic">{{ content.summary }}</span><br>
-      <a href="{{ content.arxiv }}" target="_blank" class="btn btn-sm btn-outline-primary mt-2">
-        View on arXiv
-      </a>
-    </li>
-  {% endfor %}
-</ul>
