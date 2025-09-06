@@ -1,0 +1,13 @@
+- name: "Geometry of Neural Networks on Manifolds"
+  publisher: "Journal of Mathematical AI"
+  summary: "We study neural architectures constrained by Riemannian geometry."
+  url: "https://doi.org/10.1000/example"
+  arxiv: "https://arxiv.org/abs/1234.56789"
+  type: "publication"
+
+- name: "Einstein Metrics on Lie Groups via PINNs"
+  publisher: "Preprint"
+  summary: "Physics-informed neural networks are applied to Einstein metrics."
+  url: "https://example.com/preprint"
+  arxiv: "https://arxiv.org/abs/9876.54321"
+  type: "preprint"

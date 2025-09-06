@@ -10,12 +10,11 @@ nav_order: 2
 <!-- _pages/publications.md -->
 
 <!-- Bibsearch Feature -->
-
-HOLA
+<h1>Research</h1>
 
 <h3>Publications</h3>
 <ul class="list-group list-group-flush">
-  {% assign publications = site.data.publications | where: "type", "publication" | sort: 'releaseDate' | reverse %}
+  {% assign publications = site.data.publications | where: "type", "publication" %}
   {% for content in publications %}
     <li class="list-group-item">
       <a href="{{ content.url }}" target="_blank">{{ content.name }}</a><br>
@@ -30,7 +29,7 @@ HOLA
 
 <h3>Preprints</h3>
 <ul class="list-group list-group-flush">
-  {% assign preprints = site.data.publications | where: "type", "preprint" | sort: 'releaseDate' | reverse %}
+  {% assign preprints = site.data.publications | where: "type", "preprint" %}
   {% for content in preprints %}
     <li class="list-group-item">
       <a href="{{ content.url }}" target="_blank">{{ content.name }}</a><br>
