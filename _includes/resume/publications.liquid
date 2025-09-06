@@ -13,6 +13,22 @@
   {% endfor %}
 </ul>
 
+<!-- Example entry -->
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">
+    <a href="https://doi.org/10.1000/example" target="_blank">
+      Geometry of Neural Networks on Manifolds
+    </a><br>
+    <span style="font-size: 0.95rem">Journal of Mathematical AI</span><br>
+    <span style="font-size: 0.95rem; font-style: italic">
+      We study neural architectures constrained by Riemannian geometry.
+    </span><br>
+    <a href="https://arxiv.org/abs/1234.56789" target="_blank" class="btn btn-sm btn-outline-primary mt-2">
+      View on arXiv
+    </a>
+  </li>
+</ul>
+
 <h3>Preprints</h3>
 <ul class="list-group list-group-flush">
   {% assign preprints = data[1] | where: "type", "preprint" | sort: 'releaseDate' | reverse %}
