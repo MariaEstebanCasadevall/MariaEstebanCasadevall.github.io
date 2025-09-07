@@ -10,7 +10,7 @@ nav_order: 2
 <!-- _pages/publications.md -->
 
 <!-- Bibsearch Feature -->
-<h3>Preprints</h3>
+<h3 class="mt-5">Preprints</h3>
 <ul class="list-group list-group-flush">
   {% assign preprints = site.data.publications | where: "type", "preprint" %}
   {% for content in preprints %}
@@ -24,7 +24,7 @@ nav_order: 2
 </ul>
 
 
-<h3>Publications</h3>
+<h3 class="mt-5">Publications</h3>
 <ul class="list-group list-group-flush">
   {% assign preprints = site.data.publications | where: "type", "publication" %}
   {% for content in preprints %}
@@ -37,7 +37,7 @@ nav_order: 2
   {% endfor %}
 </ul>
 
-<h3>Talks</h3>
+<h3 class="mt-5">Talks</h3>
 <ul class="list-group list-group-flush">
   {% assign talks = site.data.publications | where: "type", "talk" | sort: "releaseDate" | reverse %}
   {% for content in talks %}
