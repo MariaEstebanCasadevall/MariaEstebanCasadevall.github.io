@@ -18,7 +18,7 @@ nav_order: 2
       • {{ content.authors }}. ({{ content.releaseDate | date: "%Y" }}) 
       <a href="{{ content.url }}" target="_blank"><strong>{{ content.name }}</strong></a>. 
       {{ content.publisher }}. 
-      {{ content.volume }}{% if content.number %} No {{ content.number }}{% endif %}{% if content.pages %}, pp {{ content.pages }}{% endif %}.
+      {{ content.volume }}{% if content.number %} No {{ content.number }}{% endif %}{% if content.pages %}, pp {{ content.pages }}{% endif %}
     </li>
   {% endfor %}
 </ul>
