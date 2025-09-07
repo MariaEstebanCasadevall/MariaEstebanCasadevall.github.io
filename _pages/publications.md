@@ -19,11 +19,6 @@ nav_order: 2
       <a href="{{ content.url }}" target="_blank"><strong>{{ content.name }}</strong></a>. 
       {{ content.publisher }}. 
       {{ content.volume }}{% if content.number %} No {{ content.number }}{% endif %}{% if content.pages %}, pp {{ content.pages }}{% endif %}.
-      {% if content.arxiv %}
-        <a href="{{ content.arxiv }}" target="_blank" class="btn btn-sm btn-outline-primary ms-2">
-          View on arXiv
-        </a>
-      {% endif %}
     </li>
   {% endfor %}
 </ul>
@@ -31,20 +26,33 @@ nav_order: 2
 
 <h3>Publications</h3>
 <ul class="list-group list-group-flush">
-  {% assign preprints = site.data.publications | where: "type", "preprint" %}
+  {% assign preprints = site.data.publications | where: "type", "Publications" %}
   {% for content in preprints %}
     <li class="list-group-item">
       • {{ content.authors }}. ({{ content.releaseDate | date: "%Y" }}) 
       <a href="{{ content.url }}" target="_blank"><strong>{{ content.name }}</strong></a>. 
       {{ content.publisher }}. 
       {{ content.volume }}{% if content.number %} No {{ content.number }}{% endif %}{% if content.pages %}, pp {{ content.pages }}{% endif %}.
-      {% if content.arxiv %}
-        <a href="{{ content.arxiv }}" target="_blank" class="btn btn-sm btn-outline-primary ms-2">
-          View on arXiv
-        </a>
-      {% endif %}
     </li>
   {% endfor %}
 </ul>
 
+
+<h3>Talks</h3>
+<ul class="list-group list-group-flush">
+  {% assign talks = site.data.talks | where: "type", "talk" %}
+  {% for content in talks %}
+    <li class="list-group-item">
+      • {{ content.publisher }}<br>
+      <em>Title:</em> <strong>{{ content.name }}</strong><br>
+      {% if content.url %}<a href="{{ content.url }}" target="_blank">Link</a>{% endif %}
+      {% if content.recording %}
+        <br><a href="{{ content.recording }}" target="_blank">Recording</a>
+      {% endif %}
+      {% if content.note %}
+        <br>{{ content.note }}
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
 
