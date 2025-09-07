@@ -12,7 +12,7 @@
 - name: "Reverse isoperimetric properties of thick λ-concave bodies in the Hyperbolic plane"
   authors: "Maria Esteban"
   publisher: "Preprint"
-  releaseDate: "2024-01-01"
+  releaseDate: "2025-01-01"
   url: "https://arxiv.org/abs/2411.09087"
   type: "preprint"
 
@@ -21,7 +21,9 @@
   publisher: "University of Oxford MSc Dissertation"
   releaseDate: "2025-01-01"
   note: "Supervisor: Prof. Jason Lotay"
-  url: "/assets/pdf/Dissertation_Final Version.pd"  
+  url: "/assets/pdf/Dissertation_Final Version.pd" 
+  type: "thesis"
+ 
 
 
 - name: "Discrete notions of curvature on graphs: Ollivier Ricci Curvature and non-convergence of the Ollivier Ricci Flow"
