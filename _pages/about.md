@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-#subtitle: <a href='#'> Amsterdam Machine Learning Lab, AMLab
+subtitle: <a href='#'> Amsterdam Machine Learning Lab, AMLab
 
 profile:
   align: right

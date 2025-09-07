@@ -37,10 +37,9 @@ nav_order: 2
   {% endfor %}
 </ul>
 
-
 <h3>Talks</h3>
 <ul class="list-group list-group-flush">
-  {% assign talks = site.data.talks | where: "type", "talk" %}
+  {% assign talks = site.data.publications | where: "type", "talk" | sort: "releaseDate" | reverse %}
   {% for content in talks %}
     <li class="list-group-item">
       • {{ content.publisher }}<br>
@@ -55,4 +54,6 @@ nav_order: 2
     </li>
   {% endfor %}
 </ul>
+
+
 

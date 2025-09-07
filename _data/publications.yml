@@ -8,14 +8,14 @@
   #url: "https://doi.org/10.1000/example"
   #arxiv: "https://arxiv.org/abs/1234.56789"
   type: "publication"
-
+  
 - name: "Reverse isoperimetric properties of thick λ-concave bodies in the Hyperbolic plane"
   authors: "Maria Esteban"
   publisher: "Preprint"
-  releaseDate: "2024"
+  releaseDate: "2024-01-01"
   url: "https://arxiv.org/abs/2411.09087"
-  #arxiv: "https://arxiv.org/abs/9876.54321"
   type: "preprint"
+
 
 - name: "Reverse isoperimetric properties of thick λ-sausages in the hyperbolic plane and Blaschke's rolling theorem"
   authors: "Maria Esteban"
