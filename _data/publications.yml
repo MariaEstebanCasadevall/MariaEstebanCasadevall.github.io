@@ -8,7 +8,7 @@
   #url: "https://doi.org/10.1000/example"
   #arxiv: "https://arxiv.org/abs/1234.56789"
   type: "publication"
-  
+
 - name: "Reverse isoperimetric properties of thick λ-concave bodies in the Hyperbolic plane"
   authors: "Maria Esteban"
   publisher: "Preprint"
@@ -21,7 +21,7 @@
   authors: "Maria Esteban"
   publisher: "Spectral Geometry in the Clouds Seminar, Canadian Centre de Recherche Mathématique (CRM), Online"
   releaseDate: "2024"
-  url: "https://nms.kcl.ac.uk/jean.lagace/SpectralClouds/"
+  #url: "https://nms.kcl.ac.uk/jean.lagace/SpectralClouds/"
   type: "talk"
 
 - name: "Discrete notions of curvature on graphs: Ollivier Ricci Curvature and non-convergence of the Ollivier Ricci Flow"
@@ -36,7 +36,7 @@
   authors: "Maria Esteban"
   publisher: "IMA National Celebration of the Best Final Year Maths Project 2024, Institute of Mathematics and Its Applications (IMA), London, UK"
   releaseDate: "2024"
-  url: ""
+  #url: ""
   #note: "Obtained the 2nd Prize for best final year dissertation of 2024"
   type: "talk"
 
@@ -44,7 +44,7 @@
   authors: "Maria Esteban"
   publisher: "IMA Early Career Mathematicians Seminar, Institute of Mathematics and Its Applications (IMA), London, UK"
   releaseDate: "2024"
-  url: ""
+  #url: ""
   recording: https://www.youtube.com/watch?v=NvPxW7mz4Zk
   type: "talk"
 
@@ -52,14 +52,14 @@
   authors: "Maria Esteban"
   publisher: "Tomorrow’s Mathematicians Today (TMT) Conference, Institute of Mathematics and Its Applications (IMA), London, UK"
   releaseDate: "2023"
-  url: ""
+  #url: ""
   type: "talk"
 
 - name: "An Introduction to Machine Learning in the Hyperbolic Space"
   authors: "Maria Esteban"
   publisher: "Tomorrow’s Mathematicians Today (TMT) Conference, Institute of Mathematics and Its Applications (IMA), London, UK"
   releaseDate: "2023"
-  url: ""
+  #url: ""
   #note: "Obtained the 1st Prize for Best Presentation awarded by IMA"
   type: "talk"
 
@@ -67,5 +67,5 @@
   authors: "Maria Esteban"
   publisher: "Women in Data Science (WiDS) Conference, University of Edinburgh and Heriot-Watt University, Edinburgh, UK"
   releaseDate: "2022"
-  url: ""
+  #url: ""
   type: "talk"

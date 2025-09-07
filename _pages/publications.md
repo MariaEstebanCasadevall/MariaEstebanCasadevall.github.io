@@ -44,7 +44,6 @@ nav_order: 2
     <li class="list-group-item">
       • {{ content.publisher }}<br>
       <em>Title:</em> <strong>{{ content.name }}</strong><br>
-      {% if content.url %}<a href="{{ content.url }}" target="_blank">Link</a>{% endif %}
       {% if content.recording %}
         <br><a href="{{ content.recording }}" target="_blank">Recording</a>
       {% endif %}
