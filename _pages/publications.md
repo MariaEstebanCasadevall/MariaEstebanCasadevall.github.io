@@ -37,6 +37,20 @@ nav_order: 2
   {% endfor %}
 </ul>
 
+<h3 class="mt-5">Thesis</h3>
+<ul class="list-group list-group-flush">
+  {% assign theses = site.data.publications | where: "type", "thesis" %}
+  {% for content in theses %}
+    <li class="list-group-item">
+      • {{ content.authors }}. ({{ content.releaseDate | date: "%Y" }}) 
+      <a href="{{ content.url }}" target="_blank"><strong>{{ content.name }}</strong></a>. 
+      {{ content.publisher }}.
+      {% if content.note %}<br>{{ content.note }}{% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+
 <h3 class="mt-5">Talks</h3>
 <ul class="list-group list-group-flush">
   {% assign talks = site.data.publications | where: "type", "talk" | sort: "releaseDate" | reverse %}

@@ -16,6 +16,22 @@
   url: "https://arxiv.org/abs/2411.09087"
   type: "preprint"
 
+- name: "Geometrical Patchwork: A Gluing Construction of Einstein Metrics via High-Dimensional Dehn Filling"
+  authors: "Maria Esteban"
+  publisher: "University of Oxford MSc Dissertation"
+  releaseDate: "2025-01-01"
+  note: "Supervisor: Prof. Jason Lotay"
+  url: "/assets/pdf/Dissertation_Final Version.pd"  
+
+
+- name: "Discrete notions of curvature on graphs: Ollivier Ricci Curvature and non-convergence of the Ollivier Ricci Flow"
+  authors: "Maria Esteban"
+  publisher: "Heriot-Watt University BSc Dissertation"
+  releaseDate: "2024-01-01"
+  note: "Supervisor: Prof. Alessandro Sisto"
+  url: "/assets/pdf/TFG.pdf"
+  type: "thesis"
+
 
 - name: "Reverse isoperimetric properties of thick λ-sausages in the hyperbolic plane and Blaschke's rolling theorem"
   authors: "Maria Esteban"
