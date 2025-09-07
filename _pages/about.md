@@ -27,6 +27,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
+<p>Welcome to my webpage! 😊</p>
+
 I am first-year [ELLIS](https://ellis.eu/phd-postdoc) PhD student at the University of Amsterdam [(AMLab)](https://amlab.science.uva.nl/) supervised by [Prof.Erik Bekkers](https://ebekkers.github.io/) and co-supervised by [Prof.Søren Hauberg](https://www2.compute.dtu.dk/~sohau/). My reseach interest lie in the intersection of machine learning, geometry and topology. 
 
 Previously, I completed a a MSc in Mathematical Sciences from the [University of Oxford](https://www.maths.ox.ac.uk/study-here/postgraduate-study/msc-courses/msc-mathematical-sciences-omms) and a BSc in Mathematics from [Heriot-Watt University](https://www.hw.ac.uk/about/our-schools/mathematical-and-computer-sciences/departments/mathematics). 

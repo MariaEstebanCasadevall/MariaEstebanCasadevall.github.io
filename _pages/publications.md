@@ -26,7 +26,7 @@ nav_order: 2
 
 <h3>Publications</h3>
 <ul class="list-group list-group-flush">
-  {% assign preprints = site.data.publications | where: "type", "Publications" %}
+  {% assign preprints = site.data.publications | where: "type", "publication" %}
   {% for content in preprints %}
     <li class="list-group-item">
       • {{ content.authors }}. ({{ content.releaseDate | date: "%Y" }}) 
